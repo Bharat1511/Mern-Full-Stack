@@ -1,0 +1,29 @@
+#d1 {
+  border: 5px solid #000;
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 80px;
+  margin: 50px;
+  background-color: aqua;
+}
+
+#d1 span {
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+}
+
+#d2 {
+  border: 5px solid red;
+  border-radius: 20px;
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  background-color: rgb(214, 248, 80);
+  margin: 0 0 0 50px;
+  padding: 10px 20px 30px 40px;
+  box-shadow: 5px 5px 10px 1px black;
+}
