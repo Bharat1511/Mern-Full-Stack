@@ -1,0 +1,22 @@
+#body 
+{
+  background-color: rgb(186, 65, 65);
+}
+
+#mainBox
+{
+    border:10px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px grey;
+    background-color: rgba(255, 255, 255, 0.51);
+}
+
+#formheading 
+{
+  color: blue;
+  text-align: center;
+}
