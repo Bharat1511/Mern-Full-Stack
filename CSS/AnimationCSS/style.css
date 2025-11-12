@@ -1,0 +1,98 @@
+h1{
+    width: 200px;
+    border: 1px solid black;
+    /* margin-left: 500px; */
+   
+}
+h1:hover{
+    /* margin-left: 500px;
+    transition: margin-left 5s; */
+
+    width: 500px;
+    transition: width 5s;
+}
+
+#outer1{
+  width:500px;
+  height:50px;
+  border: 2px solid black;
+  #inner1{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(218, 55, 22);
+  }
+}
+
+#outer1:hover{
+ #inner1{
+     width:100%;
+     transition:width 5s ease-in-out ;
+
+
+ }
+
+} 
+
+
+
+
+
+#outer{
+  width:500px;
+  height:50px;
+  border: 2px solid black;
+  #inner{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(218, 55, 22);
+  }
+}
+
+#outer:hover{
+ #inner{
+     width:100%;
+    background-color: rgb(10, 218, 52); 
+    transition:width 5s ease-in-out ,background-color 5s ease-in-out;
+ }
+
+} 
+
+
+#outer2{
+  width:500px;
+  height:50px;
+  border: 1px solid black;
+
+  #inner2{
+    height: 100%;
+    
+  }
+}
+
+#outer2:hover{
+ #inner2{
+
+    animation: MyAnimation 5s linear ;
+     
+ }
+
+
+} 
+
+@keyframes MyAnimation {
+    0%{
+        width: 0%;
+        background-color: red;
+    }
+    50%{
+        width: 50%;
+        background-color: yellow;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
+
+
+

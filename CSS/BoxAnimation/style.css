@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+
+    animation: MovingBox 10s linear infinite;
+
+}
+
+@keyframes MovingBox {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+        transform: rotatex(180deg);
+    }
+
+    25%{
+        top: 0px;
+        left: 500px;
+        background-color: yellow;
+         transform: rotatex(180deg);
+         transition: tranform 2s;
+    }
+    50%{
+        top: 500px;
+        left: 500px;
+        background-color: green;
+          transform: rotatex(180deg);
+    }
+    75%{
+        top: 500px;
+        left: 0px;
+        background-color: blue;
+         transform: rotatex(180deg);
+         transition: tranform 2s;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: black;
+         transform: rotatex(90deg);
+         transition: tranform 2s;
+    }
+
+    
+}
