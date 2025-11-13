@@ -19,14 +19,16 @@
         top: 0px;
         left: 0px;
         background-color: red;
-        transform: rotatex(180deg);
+        transform: rotate(360deg);
+         transition: tranform 5s;
+
     }
 
     25%{
         top: 0px;
         left: 500px;
         background-color: yellow;
-         transform: rotatex(180deg);
+         transform: rotatey(90deg);
          transition: tranform 2s;
     }
     50%{
@@ -39,7 +41,7 @@
         top: 500px;
         left: 0px;
         background-color: blue;
-         transform: rotatex(180deg);
+         transform: rotatez(360deg);
          transition: tranform 2s;
     }
     100%{

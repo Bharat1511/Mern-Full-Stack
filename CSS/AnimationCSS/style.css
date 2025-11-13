@@ -94,5 +94,43 @@ h1:hover{
     }
 }
 
+#D1 {
+  border: 1px solid #ff0000;
+  width: fit-content;
+  position: relative;
+}
+
+#d1 {
+  background: white;
+  position: absolute;
+  overflow: hidden;
+  top: -80px;
+  left: 50px;
+  height: 0px;
+}
+
+#D1:hover {
+  #d1 {
+    background: white;
+    position: absolute;
+
+    height: 77px;
+    transition: height 0.3s;
+  }
+}
+
+#d2{
+  border: 1px solid #000;
+  font-size: xx-large;
+  width: 100px;
+  height: 50px;
+}
+
+
+#d2:hover{
+   transform: rotateY(180deg);
+  transition: transform 2s;
+}
+
 
 
