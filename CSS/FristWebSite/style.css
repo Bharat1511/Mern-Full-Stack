@@ -278,7 +278,7 @@ h1{
   height: auto;
 }
 #card h1{
-  margin-right: 20pxpx;
+  margin-right: 20px;
   text-align:justify;
   font-size: 24px;
   font-weight: bold;
@@ -355,12 +355,28 @@ h1{
      padding: 30px;
     align-items: center;
     
+    
     }
+}
+
+#myDetail{
+
+   display:  inline-block;
+ 
 }
 
 
 #client{
+
   display: flex;
+
+ 
+}
+
+.img{
+  width: 400px;
+ display: inline-block;
+
 }
 
 #skills{
@@ -407,6 +423,7 @@ h1{
   border-radius: 20px ;  
   box-shadow: 8px;
   color: rgb(245, 243, 243);  
+ 
 }
 .id{
   padding-top: 50px;
@@ -418,9 +435,12 @@ h1{
   border-radius: 15px;
   border: 1px solid black;
   background-color: rgb(32, 29, 29);
-  h3{
+  h2{
     color: white;
-    font-size: 40px;
+    font-size: 20px;
+    margin: auto;
+    text-align: start;
+   
   }
   p{
     color: rgb(231, 231, 229);
@@ -434,10 +454,11 @@ h1{
 }
 #forField {
   width: 500px;
-  margin: 30px auto;
+  margin: auto ;
   display: flex;
   flex-direction: column;
    gap: 25px;
+   border-radius: 15px;
 }
 #forField label {
   font-size: 20px;
@@ -485,13 +506,13 @@ h1{
   color: white;
   border: none;
   padding: 10px 0;
-  width: 240px;
+  width: 200px;
   height: 40px;
   border-radius: 8px;
   font-size: 18px;
   cursor: pointer;
   margin-top: 20px;
-  margin-left: 70%;
+  margin-left: 60%;
 }
 .nameRow{
   display: flex;
@@ -507,20 +528,20 @@ h1{
   color:  #8c9bb9;
   font-size: 30px;
 }
-#ladtNavBar{
+#lastNavBar{
+  margin-top: 150px;
   border: none;
   background-color: white;
   border-radius: 2px;
   width: 100%;
   height: auto;
-  display: flex;
   justify-content: space-around;
   align-items: start;
   gap: 10%;
   
   
 }
-#ladtNavBar h1{
+#lastNavBar h1{
   padding-right: 18px;
   font-size: 20px;
   color: #868181 ;
@@ -528,27 +549,27 @@ h1{
   text-align: start
 
 }
-#ladtNavBar button{
+#lastNavBar button{
   gap:50%;
   margin:8px;
   padding: 10px;
   background-color: white;
   border: none;
-  font-size: 18px;
+  font-size: 15px;
   color: #868181 ;
   text-align: start;
   
 }
-#ladtNavBar div{
+#lastNavBar div{
   .sub{
   background-color:black;
   color: white;
   border: none;
   width: 150px;
   height: 50px;
-  border-radius: 5px;
-  align-items: start;
-  text-align: start;
+  border-radius: 7px;
+  align-items: center;
+  text-align: center;
   }
 }
  
