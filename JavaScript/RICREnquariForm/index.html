@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- This is main Box -->
+    <div id="MainBox " class="mx-4 px-4">
+      <div class="navbar gap-1">
+        <img src="RICR-logo.png" alt="" class="img" />
+        <span>Home</span>
+        <span>About</span>
+        <span>Courses</span>
+        <span>IDE</span>
+        <span>Contact Us</span>
+        <div>
+          <span class="bi bi-telephone-fill">+91 8889991736</span>
+          <button
+            style="background-color: #125785"
+            class="btn shadow-lg text-white"
+          >
+            Student Login
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="EnquiryForm"
+        class="container bg-success-subtle rounded form-section mz-5 mt-4 w-75"
+      >
+        <div class="m-3">
+          <h2 class="mx-5 px-5 text-center pt-4">
+            <span>Enquiry Form</span>
+          </h2>
+
+          <div class="text-center mt-3 mb-3">
+            <span
+              >Have questions or need assistance? Fill out the form below to
+              connect with our team and explore your opportunities.</span
+            >
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Person Name*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Person Name"
+                name="PersonName"
+                id="PersonName"
+              />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Contact Number*</label>
+              <input
+                type="number"
+                class="form-control"
+                id="ContactNo"
+                name="ContactNo"
+                placeholder="Contact Number"
+              />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Email*</label>
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Qualification*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Qualification"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">College/School Name*</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="College/School Name"
+            />
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Year*</label>
+              <select class="form-select" id="Year" name="Year">
+                <option disabled selected>Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Branch*</label>
+              <select name="Branch" id="Branch" class="form-select">
+                <option disabled selected>Select Branch</option>
+                <option>Computer Science Engineering</option>
+                <option>Electronic and communication Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Civil Engineering</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col mb-6">
+              <label class="form-label">Interested in Which Course*</label>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label"
+                  >Full Stack Web Development - Placement Oriented</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label"
+                  >Data Science with Python - Placement Oriented</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label"
+                  >Data Analytics with Python - Placement Oriented</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Business Analyst</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Java Programming</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Python Programming</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">C/C++ Programming</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Other</label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">
+                Source of Information <br />
+                <span
+                  ><b
+                    >(Only choose 'Received call from institute' if you actually
+                    got a call from us)</b
+                  ></span
+                >
+              </label>
+              <select class="form-select">
+                <option disabled selected>Source of Information</option>
+                <option>Newspaper/Print Media</option>
+                <option>Friend/Relatives</option>
+                <option>Social Media</option>
+                <option>Workshop/Seminar</option>
+                <option>
+                  Received call from institute(Only choose if you actuallly got
+                  a call from us)
+                </option>
+                <option>other</option>
+              </select>
+
+              <div class="col-md-6">
+                <label class="form-label">Name of Executive*</label>
+
+                <select class="form-select">
+                  <option disabled selected>Name of Executive</option>
+                  <option>Executive 1</option>
+                  <option>Executive 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button type="button" class="submit-btn" id="Submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is bottom body -->
+      <div class="mt-5" style="background-color: #125785;">
+        <div class="row mb-3" >
+          <div class="col mb-4 col-lg-4 col-md-6">
+              <img src="logo.png" alt="" class="img m-5" />
+          <div class="mb-0 small text-white text-center">
+            RICR is a subsidiary of Raj Digital Private Limited. It is a premier
+            coding and robotics institute, empowering students with cutting-edge
+            education and real-world skills for a tech-driven future.
+          </div>
+          </div>
+
+           <div class="col mb-4 col-lg-4 col-md-6 mt-5">
+        <h6 ><b>Quick Links</b></h6>
+        <ul class="list-unstyled small ">
+          <li><a href="#" class="text-white text-decoration-none mb-3">Courses</a></li>
+          <li><a href="#" class="text-white text-decoration-none mb-3">Host a Workshop</a></li>
+          <li><a href="#" class="text-white text-decoration-none mb-3">Community Ambassador</a></li>
+          <li><a href="#" class="text-white text-decoration-none mb-3">Work With Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none mb-3">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mt-5">
+        <h6 class="fw-bold">Other Links</h6>
+        <ul class="list-unstyled small mb-3">
+          <li><a href="#" class="text-white text-decoration-none">Edunest Facility</a></li>
+        </ul>
+        <hr>
+        <h6 class="fw-bold">Policies</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none mb-3">Terms of Service</a></li>
+          <li><a href="#" class="text-white text-decoration-none mb-3">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mt-5">
+        <h6 class="fw-bold">Information</h6>
+        <ul class="list-unstyled small mb-5">
+          <li class="bi bi-geo-alt text-white mb-3">&nbsp;&nbsp;Minal Mall, 4th Floor, Minal Residency, JK Road, Bhopal Pincode (462023)</li>
+          <li class="bi bi-envelope text-white mb-3">&nbsp;&nbsp;contact@ricr.in</li>
+          <li  class="bi bi-chat-right-dots text-white mb-3">&nbsp;&nbsp;+91 8889991736</li>
+           </ul>
+
+          <span class="bi bi-facebook "></span>
+          <span class="bi bi-instagram"></span>
+          <span class="bi bi-youtube"></span>
+          <span class="bi bi-linkedin" ></span>   
+
+      </div>
+     
+      <hr class="border-light ">
+
+    <div class="mb-4 d-flex flex-md-row justify-content-between align-items-center small text-white ">
+      <span>© 2024 - Raj Digital Private Limited | All Rights Reserved</span>
+      <a href="#" class="text-white text-decoration-none mt-2 mt-md-0">Sitemap</a>
+    </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

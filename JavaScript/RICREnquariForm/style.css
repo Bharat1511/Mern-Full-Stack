@@ -1,0 +1,18 @@
+.img{
+    height: 50px;
+    width: 140px;
+}
+
+#Submit{
+    color: rgb(251, 249, 249);
+    background: black;
+    padding: 12px 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 25px;
+
+    
+
+}
+
