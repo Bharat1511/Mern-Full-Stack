@@ -1,3 +1,24 @@
+#RainbowBulb {
+  padding: 50px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: fit-content;
+  margin-bottom: 20px;  
+}
+
+.color{
+ 
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-flex
+}
+
+
+
 #bulb {
   padding: 50px;
   border: 1px solid #000;
