@@ -1,4 +1,4 @@
-submit(){
+ function Submit(){
 
     console.log("Form Submitted");   
     const em = document.getElementById("email").value;
@@ -8,5 +8,6 @@ submit(){
     console.log("Message: " + msg);
 
     alert("Form Submitted Successfully");
+
 
 }
