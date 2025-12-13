@@ -3,13 +3,14 @@ function calculate() {
   const service = document.getElementById("service").value;
   const person = document.getElementById("person").value;
   const display = document.getElementById("tip");
+
   if(!Billlamount || !service || !person){
     alert("Enter the Details")
     return
   }
   
   if(service === "25"){
-    bill =  Billlamountamount * 0.25;
+    bill =  Billlamount * 0.25;
   }
   else if(service === "20"){
     bill = Billlamount * 0.2;
