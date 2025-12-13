@@ -18,20 +18,20 @@
   </head>
   <body>
     <header class="w-full text-center bg-primary text-white align-items-center py-3 justify-content-center">
-      <h1 class="fw-bolder fst-italic">Age Calculator</h1>
+      <h1 class="fw-bold fst-italic">Age Calculator</h1>
     </header>
 
     <main>
       <div
-        class="continer border-dark d-flex flex-column gap-4  align-items-center box border rounded-4 p-5"
+        class="continer border-dark bg-white d-flex flex-column gap-4 align-items-center box border rounded-4 p-5"
       >
         <div class="d-flex flex-column align-items-center gap-2">
           <label for="dob" class="fw-bold fs-4">Enter Your Date of Birth</label>
-          <input type="date" id="dob" name="dob" class="inp" />
+          <input type="date" id="dob" name="dob" class="inp border-2 border-dark" />
         </div>
         <div class="d-flex flex-column align-items-center gap-2">
           <label for="today" class="fw-bold fs-4">Enter Current Date</label>
-          <input type="date" id="today" name="today" class="inp" />
+          <input type="date" id="today" name="today" class="inp border-2 border-dark" />
         </div>
         <button class="btn btn-primary py-2 px-5" id="btn" onclick="calculate()">
           Calculate
