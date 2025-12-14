@@ -1,4 +1,4 @@
-async function GetNewJoke(){
+async function GetNewjoke() {
 
     const response = await fetch("https://official-joke-api.appspot.com/jokes/random");
     // console.log(response);
