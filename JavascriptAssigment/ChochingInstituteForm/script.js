@@ -55,7 +55,7 @@ function submit(){
 
    const data = {
     FullName: nm,
-    Email: em,
+    email: em,
     Phone: ph,
     DOB: db,
   };
