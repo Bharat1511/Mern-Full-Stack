@@ -1,0 +1,24 @@
+a:hover{
+    color: orange !important;
+}
+
+
+a:active{
+    color: red !important;
+}
+
+
+
+#home{
+    height: 100vh;
+}
+
+
+.card{
+    height: 500px;
+}
+
+#row{
+    height: 500px;
+   
+}
