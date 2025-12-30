@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../assets/istockphoto-517742444-612x612.jpg";
+import makeup from "../assets/Partner-In-Shine-Transferproof-Lip-Gloss-11_4c0fa934.webp"
+import makeup1 from "../assets/Dream-Cover-SPF15-Mattifying-Compact-Powder-8.webp"
+import makeup2 from "../assets/Limited-Edition-La-La-Love-18HR-Liquid-Lipstick-Kit-4.webp"
 
 const Home = () => {
   return (
@@ -53,6 +56,21 @@ const Home = () => {
           </a>
         </div>
 
+       <div className="flex  gap-4 grid-rows-3-3 justify-items-center">
+         <div className="">
+          <img src={makeup} alt="makeup" className="rounded " />
+        </div>
+
+        <div>
+            <img src={makeup1} alt="makeup1" className="rounded" />
+        </div>
+
+        <div>
+            <img src={makeup2} alt="makeup2" className="rounded" />
+        </div>
+        
+
+       </div>
       
       </main>
     </>

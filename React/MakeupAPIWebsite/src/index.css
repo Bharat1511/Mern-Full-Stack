@@ -1,1 +1,6 @@
 @import 'tailwindcss';
+
+body {
+  background-color: #fef3c7; /* amber-100 jaisa */
+  margin: 0;
+}

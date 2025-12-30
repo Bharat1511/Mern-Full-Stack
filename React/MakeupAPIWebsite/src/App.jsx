@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Product from "./pages/Product";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup"
+
 
 
 
@@ -29,19 +32,25 @@ import Product from "./pages/Product";
       <div className="border p-3 w-10 h-10">9</div>
       <div className="border p-3 w-10 h-10">10</div>
      </div> */}
-
+   
+  
       <BrowserRouter>
+
       <Header/>
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/product" element={<Product/>} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/signup" element={<Signup/>} />
+      
        </Routes>
 
 
    <Footer/>
       </BrowserRouter>
+  
    
    
    
