@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { SlUserFollow } from "react-icons/sl";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { FaUserAlt } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
+
 
 const Signup = () => {
   const [SignupData, setSignupData] = useState({
@@ -53,7 +57,7 @@ const Signup = () => {
           onSubmit={handleSubmit}
           onReset={handleClearForm}
         >
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" className="flex gap-2 items-center"> <FaUserAlt /> Name:</label>
           <input
             id="name"
             type="text"
@@ -65,7 +69,7 @@ const Signup = () => {
             required
           />
 
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email" className="flex gap-2 items-center"> <HiOutlineMailOpen /> Email:</label>
           <input
             id="email"
             type="text"
@@ -77,7 +81,7 @@ const Signup = () => {
             required
           />
 
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" className="flex gap-2 items-center"> <RiLockPasswordFill /> Password:</label>
           <input
             id="password"
             type="password"

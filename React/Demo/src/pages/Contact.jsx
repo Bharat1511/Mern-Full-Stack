@@ -8,13 +8,28 @@ const Contact = () => {
     city: "",
     subject: "",
     message: "",
+    religion: "",
+    gender: "",
+    skill: [],
   });
 
   const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.traget;
-    setContactData((previousData) => ({ ...previousData, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    if (type === "checkbox") {
+      let temp = contactData.skill;
+      if (checked) {
+        temp.push(value);
+        setContactData((previousData) => ({ ...previousData, [name]: temp }));
+      } else {
+        temp = Object.values(temp); //Convert to Array
+        temp = temp.filter((word) => word !== value); //Remove the Undersired Value
+        setContactData((previousData) => ({ ...previousData, [name]: temp }));
+      }
+    } else {
+      setContactData((previousData) => ({ ...previousData, [name]: value }));
+    }
   };
 
   const handleClearForm = () => {
@@ -25,6 +40,9 @@ const Contact = () => {
       city: "",
       subject: "",
       message: "",
+      religion: "",
+      gender: "",
+      skill: [],
     });
   };
 
@@ -43,9 +61,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center bg-info mt-4 h-25 w-25">
         <h1>Contact Us</h1>
-        <div className="container">
+        <div className="container ">
           <form onReset={handleClearForm} onSubmit={handleSubmit}>
             <div>
               <label htmlFor="fullName">Full Name</label>
@@ -57,7 +75,6 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter your Name"
                 className="text-primary"
-                required
               />
             </div>
 
@@ -71,7 +88,6 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter your Email"
                 className="text-primary"
-                required
               />
             </div>
 
@@ -85,7 +101,6 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter your phone"
                 className="text-primary"
-                required
               />
             </div>
 
@@ -99,7 +114,6 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter your city"
                 className="text-primary"
-                required
               />
             </div>
 
@@ -113,8 +127,106 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter your subject"
                 className="text-primary"
-                required
               />
+            </div>
+
+            <div>
+              <label htmlFor="religion">Religion</label>
+              <select
+                name="religion"
+                id="religion"
+                onChange={handleChange}
+                value={contactData.religion}
+              >
+                <option value="">--Select Religion--</option>
+                <option value="islam">Islam</option>
+                <option value="hinduism">Hinduism</option>
+                <option value="christianity">Christianity</option>
+                <option value="buddhism">Buddhism</option>
+                <option value="jainism">Jainism</option>
+                <option value="sikhism">Sikhism</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="gender">Gender</label>
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                onChange={handleChange}
+                checked={contactData.gender === "male"}
+              />{" "}
+              Male
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                onChange={handleChange}
+                checked={contactData.gender === "female"}
+              />{" "}
+              Female
+              <input
+                type="radio"
+                name="gender"
+                value="other"
+                onChange={handleChange}
+                checked={contactData.gender === "other"}
+              />{" "}
+              Other
+            </div>
+
+            <div>
+              <label htmlFor="skill">Skill known</label>
+              <input
+                type="checkbox"
+                name="skill"
+                value="html"
+                onChange={handleChange}
+                checked={
+                  Object.values(contactData.skill).find(
+                    (word) => word === "html"
+                  )
+                    ? true
+                    : false
+                }
+              />{" "}
+              HTML
+              <input
+                type="checkbox"
+                name="skill"
+                value="css"
+                onChange={handleChange}
+                checked={
+                  Object.values(contactData.skill).find(
+                    (word) => word === "css"
+                  )
+                    ? true
+                    : false
+                }
+              />{" "}
+              CSS
+              <input
+                type="checkbox"
+                name="skill"
+                value="js"
+                onChange={handleChange}
+                checked={
+                  Object.values(contactData.skill).find((word) => word === "js")
+                    ? true
+                    : false
+                }
+              />{" "}
+              JS
+              <input
+                type="checkbox"
+                name="skill"
+                value="react"
+                onChange={handleChange}
+                checked={Object.values(contactData.skill).includes("react")}
+              />{" "}
+              React
             </div>
 
             <div>
@@ -126,7 +238,6 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Enter your Message"
                 className="text-primary"
-                required
               ></textarea>
             </div>
             <div>
