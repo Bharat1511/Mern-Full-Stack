@@ -27,4 +27,4 @@ function checkGuess() {
   
 
 }
-console
+
