@@ -1,8 +1,20 @@
 import React from 'react'
+import { BrowserRouter,Route, Routes } from "react-router-dom";
+import Form from './page/form';
 
 function App() {
   return (
-    <div>App</div>
+    // <div>App</div>
+    <BrowserRouter>
+    <Routes>
+      {/* <Route> */}
+      
+         <Route path="/" element={<Form/>} />
+      
+      {/* </Route> */}
+    </Routes>
+   
+    </BrowserRouter>
   )
 }
 
